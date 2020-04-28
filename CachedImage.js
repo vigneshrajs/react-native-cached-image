@@ -81,7 +81,7 @@ class CachedImage extends React.Component {
         this._isMounted = true;
         NetInfo.addEventListener('connectionChange', this.handleConnectivityChange);
         // initial
-        NetInfo.isConnected.fetch()
+        NetInfo.fetch()
             .then(isConnected => {
                 this.safeSetState({
                     networkAvailable: isConnected
