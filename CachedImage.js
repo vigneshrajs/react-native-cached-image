@@ -80,8 +80,8 @@ class CachedImage extends React.Component {
     componentWillMount() {
         this._isMounted = true;
         NetInfo.addEventListener(state => {
-        console.log("Connection type", state.type);
-        console.log("Is connected?", state.isConnected);
+//         console.log("Connection type", state.type);
+//         console.log("Is connected?", state.isConnected);
         });
         // initial
         NetInfo.fetch()
